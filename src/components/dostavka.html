@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>Арт-Уголок | О доставке</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/dostavka.css" />
+  </head>
+
+  <body>
+    <div class="bg-circles">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+      <div class="circle c4"></div>
+      <div class="circle c5"></div>
+      <div class="circle c6"></div>
+      <div class="circle c7"></div>
+      <div class="circle c8"></div>
+      <div class="circle c9"></div>
+      <div class="circle c10"></div>
+      <div class="circle c11"></div>
+    </div>
+
+    <header class="sticky-top">
+      <div class="container py-3 py-lg-4">
+        <nav class="navbar navbar-expand-lg rounded-pill px-3 px-xl-4 shadow-around">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle4"></div>
+          <div class="circle3"></div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+              <img
+                src="/pictures/header/logo.svg"
+                alt="Логотип"
+                class="img-fluid"
+                style="max-width: 250px; width: 100%; height: auto; margin-left: 20px"
+              />
+            </a>
+            <button
+              class="navbar-toggler border-0 shadow-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Переключатель навигации"
+            >
+              <div class="col bg-white rounded" style="border: 1px solid">
+                <span class="navbar-toggler-icon"></span>
+              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto gap-lg-2">
+                <a class="nav-link active" href="/pages/arenda.html">Аренда полки</a>
+                <a class="nav-link active" href="/pages/catalog.html">Каталог</a>
+                <a class="nav-link active me-5" href="/pages/dostavka.html">О доставке</a>
+              </div>
+              <div
+                class="d-flex justify-content-center justify-content-lg-end gap-3 mt-3 mt-lg-0 pt-3 pt-lg-0 border-top border-lg-0"
+              >
+                <a class="nav-link active p-1" href="/pages/favourite.html">
+                  <img
+                    src="/pictures/header/mynaui--heart.svg"
+                    alt="Избранное"
+                    width="28"
+                    height="28"
+                  />
+                </a>
+                <a class="nav-link active p-1" href="/pages/cart.html">
+                  <img
+                    src="/pictures/header/mynaui--cart.svg"
+                    alt="Корзина"
+                    width="28"
+                    height="28"
+                  />
+                </a>
+                <a class="nav-link active p-1" href="/pages/auth-reg.html">
+                  <img
+                    src="/pictures/header/mynaui--user-circle.svg"
+                    alt="Профиль"
+                    width="28"
+                    height="28"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="delivery-wrapper">
+        <div class="delivery-container">
+          <h1 class="delivery-title p-caveat">О доставке</h1>
+          <p class="delivery-subtitle">Как получить ваш заказ быстро и удобно</p>
+
+          <!-- СПОСОБЫ ДОСТАВКИ -->
+          <div class="delivery-methods">
+            <!-- Самовывоз -->
+            <div class="delivery-card">
+              <div class="delivery-icon">🏪</div>
+              <h2>Самовывоз</h2>
+              <p>
+                Вы можете забрать заказ самостоятельно в нашем магазине. Этот способ абсолютно
+                бесплатный и позволяет сразу получить товар.
+              </p>
+              <h3>Адрес магазина:</h3>
+              <div class="address">📍 г. Красноярск, пр-т Мира, д. 79</div>
+              <h3>Как происходит:</h3>
+              <ul>
+                <li>Оформляете заказ на сайте, выбираете «Самовывоз»</li>
+                <li>Ожидаете уведомление о готовности заказа (обычно в течение 24 часов)</li>
+                <li>Приезжаете в магазин, называете номер заказа и забираете товар</li>
+              </ul>
+              <p style="margin-top: 10px; font-size: 0.95rem; color: #6ecaa5">✓ Бесплатно</p>
+            </div>
+
+            <!-- Доставка курьером / почтой -->
+            <div class="delivery-card">
+              <div class="delivery-icon">🚚</div>
+              <h2>Доставка</h2>
+              <p>
+                Заказ отправляется транспортной компанией на выбор. После оформления менеджер
+                свяжется с вами для уточнения адреса и расчёта точной стоимости.
+              </p>
+
+              <h3>Службы доставки:</h3>
+              <ul>
+                <li>
+                  <strong>СДЭК</strong> — быстрая доставка по России, пункты выдачи и курьер до
+                  двери
+                </li>
+                <li><strong>Почта России</strong> — доступная доставка в любой населённый пункт</li>
+              </ul>
+
+              <h3>Что нужно сделать:</h3>
+              <ul>
+                <li>При оформлении заказа выберите «Доставка курьером»</li>
+                <li>Укажите удобную транспортную компанию (СДЭК или Почта России)</li>
+                <li>Введите ваш точный адрес (город, улица, дом, квартира, индекс)</li>
+              </ul>
+
+              <p style="margin-top: 10px; font-size: 0.95rem; color: #9b8a78">
+                📞 После заказа менеджер свяжется с вами, чтобы уточнить адрес и сообщить пункт
+                выдачи и примерную дату доставки. Адрес будет сохранён в заказе в блоке "История
+                заказов" в вашем профиле.
+              </p>
+            </div>
+          </div>
+
+          <!-- Блок с процессом после заказа -->
+          <div class="info-block">
+            <h3>📦 Что происходит после оформления заказа?</h3>
+            <p>Мы заботимся о том, чтобы вы всегда знали, где находится ваш заказ</p>
+            <div class="info-grid">
+              <div class="info-item">
+                <div class="emoji">✅</div>
+                <h4>Подтверждение</h4>
+                <p>
+                  Менеджер связывается с вами в течение 24 часов для подтверждения заказа и
+                  уточнения адреса
+                </p>
+              </div>
+              <div class="info-item">
+                <div class="emoji">📦</div>
+                <h4>Отправка</h4>
+                <p>Заказ передаётся выбранной службе доставки (СДЭК или Почта России)</p>
+              </div>
+              <div class="info-item">
+                <div class="emoji">📍</div>
+                <h4>Отслеживание</h4>
+                <p>
+                  Менеджер отправит вам на почту или номер телефона трек-номер, с помощью которого
+                  можно отследить заказ в любой момент
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Доп. информация об адресе в профиле -->
+          <div class="info-block" style="background: #fff8e7; margin-top: 30px">
+            <h3>📋 Где будет указан адрес доставки?</h3>
+            <p>
+              После оформления заказа с доставкой, введённый вами адрес сохраняется в
+              <strong>истории заказов</strong> в вашем <strong>личном кабинете</strong>. Как только
+              с вами свяжется менеджер он поменяет ваш адрес на тот, куда будет отправлен ваш заказ,
+              чтобы вы всегда могли вспомнить нужный адрес.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <a href="/index.html"
+            ><img src="/pictures/header/logo.svg" alt="Логотип" class="footer-logo"
+          /></a>
+        </div>
+        <div class="footer-col">
+          <a href="/pages/arenda.html">Аренда полки</a>
+          <a href="/pages/catalog.html">Каталог</a>
+          <a href="/pages/dostavka.html">О доставке</a>
+          <a href="/pages/favourite.html">Избранное</a>
+          <a href="/pages/cart.html">Корзина</a>
+          <a href="/pages/auth-reg.html">Профиль</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Контакты</div>
+          <a href="tel:+73912345678">+7 (391) 234-56-78</a>
+          <a href="mailto:art-ugolok@mail.ru">art-ugolok@mail.ru</a>
+          <span>г. Красноярск, пр-т Мира, д. 79</span>
+          <span>Ежедневно с 11:00 до 21:00</span>
+        </div>
+      </div>
+      <div class="footer-copy">© 2026 Арт-Уголок. Все права защищены.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

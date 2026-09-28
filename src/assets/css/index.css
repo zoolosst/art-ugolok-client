@@ -1,0 +1,558 @@
+@font-face {
+  font-family: 'Manege';
+  src: url('/src/assets/fonts/Manege-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Miama';
+  src: url('/src/assets/fonts/miamanueva.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('/src/assets/fonts/Caveat.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pictogram';
+  src: url('/src/assets/fonts/PlovdivPictograms.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.p-manege {
+  font-family: 'Manege', sans-serif;
+}
+
+.p-miama {
+  font-family: 'Miama', sans-serif;
+  font-size: 23px;
+}
+
+.p-caveat {
+  font-family: 'Caveat', sans-serif;
+}
+
+.p-pictogram {
+  font-family: 'Pictogram', sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh; /* занимаем всю высоту окна */
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Manege', sans-serif;
+  background-image: url('/src/assets/img/main/background-descktop.svg');
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: #f8f9fa;
+  }
+
+  /* Улучшаем внешний вид на мобильных */
+  .rounded-pill {
+    border-radius: 40px !important;
+  }
+
+  .col-md-4 img {
+    max-width: 180px !important;
+  }
+
+  .bold {
+    font-size: 28px !important;
+  }
+
+  .text-special {
+    font-size: 32px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  .btn-green {
+    margin: 0px;
+    padding: 5px;
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-width: 120px;
+  }
+
+  .d-flex.gap-3 {
+    gap: 1.2rem !important;
+  }
+
+  .d-flex.gap-3 img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .col-sm-4 img {
+    max-width: 140px !important;
+  }
+
+  .bold {
+    font-size: 20px !important;
+  }
+
+  .text-special {
+    font-size: 25px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  .btn-green,
+  .btn-purple {
+    margin: 0px;
+    padding: 5px;
+    font-size: 14px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  main .container .style {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* НАЧАЛО ШАПКИ */
+.nav-link {
+  transition: all 0.2s ease-in-out;
+  padding: 0%;
+
+  font-size: 18px;
+  -webkit-text-stroke: 0.3px #1a181b;
+  /* font-weight: 600; */
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+}
+
+.navbar {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  z-index: 1;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.shadow-around {
+  box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.1),
+    0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  position: absolute;
+  z-index: -1;
+}
+
+.circle1 {
+  opacity: 30%;
+  width: 200px;
+  height: 200px;
+  background-color: #ba81c7;
+  border-radius: 50%;
+  top: -100px;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.circle2 {
+  opacity: 65%;
+  width: 70px;
+  height: 70px;
+  background-color: #f0e164;
+  border-radius: 50%;
+  top: 10px;
+  left: 350px;
+  transform: translateX(-50%);
+}
+
+.circle3 {
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+  border: 6px solid #f0e164;
+  /* толщина, тип, цвет */
+  border-radius: 50%;
+  position: absolute;
+  top: -250px;
+  left: 510px;
+  transform: translateX(-50%);
+}
+
+.circle4 {
+  opacity: 30%;
+  width: 300px;
+  height: 300px;
+  background-color: #ba81c7;
+  border-radius: 50%;
+  top: -170px;
+  left: 700px;
+  transform: translateX(-50%);
+}
+
+.circle5 {
+  width: 150px;
+  height: 150px;
+  background-color: #d7b6de;
+  border-radius: 100% 100% 0rem 0rem;
+  top: -100px;
+  left: 0;
+}
+
+/* КОНЕЦ ШАПКИ */
+
+/* ОСНОВНАЯ СТРАНИЦЫ*/
+
+img {
+  pointer-events: none;
+  /* Запрещает любые действия с картинкой */
+  -webkit-user-drag: none;
+  /* Для Safari */
+  -webkit-tap-highlight-color: transparent;
+  /* Убирает серый фон при тапе на мобильных */
+}
+
+.btn-green,
+.btn-purple {
+  font-family: 'Caveat', sans-serif;
+  color: #f8f9fa;
+  transition: transform 0.5s ease;
+  font-size: 25px;
+
+  &:hover {
+    color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.btn-green {
+  background-color: #6ecaa5;
+  border: 1px solid #30916a;
+
+  &:hover {
+    background-color: #52a585;
+    border: 1px solid #30916a;
+  }
+}
+
+.btn-purple {
+  background-color: #ba81c7;
+  border: 1px solid #993ead;
+
+  &:hover {
+    background-color: #9f64ac;
+    border: 1px solid #993ead;
+  }
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.text-special {
+  font-family: 'Caveat', sans-serif;
+  font-size: 48px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.category {
+  img {
+    max-width: 150px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-title {
+    text-decoration: underline;
+    font-size: 21px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  max-width: 18rem;
+  max-height: 30rem;
+  background-color: #f4edea;
+  border: none;
+  border-radius: 0px !important;
+}
+
+.phone-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-bg {
+  max-width: 660px;
+  width: 100%;
+  height: auto;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 76%;
+  height: 45%;
+
+  border: none;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .map-overlay {
+    width: 70%;
+    height: 65%;
+    border-radius: 20px;
+  }
+}
+
+.custom-hr {
+  opacity: 90%;
+  border: none;
+  height: 6px;
+  width: 30%;
+  background-color: #30916a;
+  margin: auto;
+  border-radius: 2px;
+}
+
+.notes-wrapper {
+  position: relative;
+  height: 700px;
+  /* задаet высоту контейнера */
+}
+
+.note-item:hover {
+  transform: scale(1.05) rotate(2deg) !important;
+  z-index: 100 !important;
+}
+
+.pink-note {
+  position: absolute;
+  transition: transform 0.3s ease;
+  top: 190px;
+  left: 250px;
+  z-index: 1;
+  transform: rotate(-3deg);
+}
+
+.pink-note2 {
+  position: absolute;
+  transition: transform 0.3s ease;
+  top: 400px;
+  left: 100px;
+  z-index: 1;
+  transform: rotate(-3deg);
+}
+
+.yellow-note {
+  position: absolute;
+  transition: transform 0.3s ease;
+  top: 50px;
+  left: 100px;
+  z-index: 2;
+}
+
+.green-zametka {
+  position: absolute;
+  transition: transform 0.3s ease;
+  top: 320px;
+  left: 150px;
+  z-index: 2;
+  transform: rotate(-1deg);
+}
+
+.note-text {
+  position: absolute;
+  top: 17px;
+  left: 55px;
+  width: 70%;
+
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  text-align: center;
+  z-index: 2;
+}
+
+.note-text p {
+  margin: 5px 0;
+  color: #333;
+  /* Цвет текста */
+}
+
+/* Обертка-ссылка */
+.flip-link-wrapper {
+  display: block;
+  text-decoration: none !important;
+  /* Убираем подчеркивание ссылки */
+  color: inherit !important;
+  perspective: 1000px;
+  width: 300px;
+  /* Фиксированная ширина */
+  height: 410px;
+  /* Фиксированная высота */
+  margin: 0 auto 20px;
+  /* Центрируем карточку в колонке */
+  cursor: pointer;
+}
+
+/* Внутренний блок для вращения */
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* Переворот при наведении */
+.flip-link-wrapper:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Общие стили для сторон */
+.flip-front,
+.flip-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  /* Центрирование контента */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Лицевая сторона (Градиенты и Отступы) */
+.flip-front {
+  /* Padding гарантирует отступ от краев */
+  padding: 25px 20px;
+  background: linear-gradient(to left, #fde3dc, #fcdaff);
+}
+
+.card-right.flip-front {
+  background: linear-gradient(to right, #fde3dc, #fcdaff);
+}
+
+/* Обратная сторона */
+.flip-back {
+  transform: rotateY(180deg);
+  padding: 0;
+
+  &.left {
+    background: linear-gradient(to left, #fde3dc, #fcdaff);
+  }
+
+  &.right {
+    background: linear-gradient(to right, #fde3dc, #fcdaff);
+  }
+}
+
+.flip-back img {
+  max-width: 250px;
+}
+
+/* Стили текста */
+.flip-front p {
+  margin: 10px 0 5px 0;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.clock-enter-from {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+.clock-enter-to {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+/* Удаление: из 0deg в 90deg — тоже поворот по часовой стрелке */
+.clock-leave-from {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.clock-leave-to {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  pointer-events: none;
+}
